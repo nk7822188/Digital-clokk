@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/images/clock-logo.png">
+  <title>Clock</title>
+</head>
+
+<body>
+
+  
+  <div class="index-header">
+
+    <div id='index-header-left-box'>
+      <div id="index-logo-container">
+        <img src="assets/images/clock-logo.png" alt="clock_logo" id="clock-logo">
+        <h1>CLOCK</h1>
+      </div>
+    </div>
+
+
+    <div id='index-header-right-box'>
+
+      <div class="index-clock-container">
+
+        <div class="clock" class="index-time-heading-container">
+          <div id="index-time-heading">TIME</div>
+        </div>
+
+        <div class="clock index-hours-container">
+          <p id="index-hours">00</p>
+          <p>hours</p>
+        </div>
+
+        <div class="clock index-clock-semicolon-container">
+          <p>:</p>
+        </div>
+
+        <div class="clock index-minutes-container">
+          <p id="index-minutes">00</p>
+          <p>mins</p>
+        </div>
+
+        <div class="clock index-clock-semicolon-container">
+          <p>:</p>
+        </div>
+
+        <div class="clock index-seconds-container">
+          <p id="index-seconds">00</p>
+          <p>secs</p>
+        </div>
+        <div>
+          
+        </div>
+        <div class="clock" id="index-meridiem">AM</div>
+      </div>
+
+      <div class="index-clock-container1">
+        <p>overlapping clock container1</p>
+      </div>
+      <div class="index-clock-container2">
+        <p></p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  
+  <div class="main-container">
+    <div id="main-box1">
+
+      <div id="index-schedule-form-container">
+        <div class="index-schedule-form-image-container">
+          <img src="./assets/images/icons8-sun-35.png" alt="sun-image" class="index-schedule-form-image">
+        </div>
+        <div>
+          <h2 class="index-schedule-form-task-label">Set wakeup time</h2>
+        </div>
+        <div>
+          <form action="">
+            <select name="" id="wake-up-time" class="schedule-form-dropdown">
+              <option value="0-2">00 AM-02 AM</option>
+              <option value="2-4">02 AM-04 AM</option>
+              <option value="4-6">04 AM-06 AM</option>
+              <option value="6-8">06 AM-08AM</option>
+              <option value="8-10">08 AM-10 AM</option>
+              <option value="10-12">10 AM-12 AM</option>
+
+              <option value="12-14">12 PM-02 PM</option>
+              <option value="14-16">02 PM-04 PM</option>
+              <option value="16-18">04 PM-06 PM</option>
+              <option value="18-20">06 PM-08 PM</option>
+              <option value="20-22">08 PM-10 PM</option>
+              <option value="22-24">10 PM-12 PM</option>
+
+
+            </select>
+          </form>
+        </div>
+
+        <div class="index-schedule-form-vertical-line-container">
+        </div>
+        <div id="error-message-container">
+          <span id="wake-up-error-message"></span>
+        </div>
+       
+
+
+        <div class="index-schedule-form-image-container">
+          <img src="./assets/images/icons8-sleep-35.png" alt="">
+        </div>
+        <div>
+          <h2 class="index-schedule-form-task-label"> Set lunch time</h2>
+        </div>
+        <div>
+          <form action="">
+            <select name="" id="lunch-time" class="schedule-form-dropdown wakeup-time">
+              <option value="0-2">00 AM-02 AM</option>
+              <option value="2-4">02 AM-04 AM</option>
+              <option value="4-6">04 AM-06 AM</option>
+              <option value="6-8">06 AM-08AM</option>
+              <option value="8-10">08 AM-10 AM</option>
+              <option value="10-12">10 AM-12 AM</option>
+
+              <option value="12-14">12 PM-02 PM</option>
+              <option value="14-16">02 PM-04 PM</option>
+              <option value="16-18">04 PM-06 PM</option>
+              <option value="18-20">06 PM-08 PM</option>
+              <option value="20-22">08 PM-10 PM</option>
+              <option value="22-24">10 PM-12 PM</option>
+
+            </select>
+          </form>         
+        </div>
+
+        <div class="index-schedule-form-vertical-line-container">
+        
+        </div>
+        <div id="error-message-container">
+          <span id="lunch-error-message"></span>
+        </div>
+        
+
+
+        <div class="index-schedule-form-image-container">
+          <img src="./assets/images/icons8-restaurant-35.png" alt="" class="index-schedule-form-image">
+        </div>
+        <div>
+          <h2 class="index-schedule-form-task-label"> Set nap time</h2>
+        </div>
+        <div>
+          <form action="">
+            <select name="" id="sleep-time" class="schedule-form-dropdown">
+              
+              <option value="0-2">00 AM-02 AM</option>
+              <option value="2-4">02 AM-04 AM</option>
+              <option value="4-6">04 AM-06 AM</option>
+              <option value="6-8">06 AM-08AM</option>
+              <option value="8-10">08 AM-10 AM</option>
+              <option value="10-12">10 AM-12 AM</option>
+
+              <option value="12-14">12 PM-02 PM</option>
+              <option value="14-16">02 PM-04 PM</option>
+              <option value="16-18">04 PM-06 PM</option>
+              <option value="18-20">06 PM-08 PM</option>
+              <option value="20-22">08 PM-10 PM</option>
+              <option value="22-24">10 PM-12 PM</option>
+            </select>
+          </form>
+        </div>
+
+        <div></div>
+        <div id="error-message-container">
+          <span id="sleep-error-message"></span>
+        </div>
+         
+        
+      </div>
+
+
+      <div id="index-greeting-message">
+        
+      </div>
+
+      <div id="current-task">
+        Party Time!
+      </div>
+    </div>
+
+
+
+    <div id="main-box2">
+      <div id="index-main-image-container">
+        <div class="index-image-desc">
+          
+        </div>
+        <img src="./assets/images/main-image.png" id="index-main-image1" alt="Pizza-party">
+        
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="main.js"></script>
+</body>
+
+</html>
